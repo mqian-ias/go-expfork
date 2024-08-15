@@ -130,7 +130,7 @@ const (
 	_FixAllocChunk = 16 << 10 // Chunk size for FixAlloc
 
 	// Per-P, per order stack segment cache size.
-	_StackCacheSize = 32 * 1024
+	_StackCacheSize = 16 * 32 * 1024
 
 	// Number of orders that get caching. Order 0 is FixedStack
 	// and each successive order is twice as large.
